@@ -9,7 +9,6 @@ const theme = createMuiTheme()
 const styles = {
   container: {
     display: 'flex',
-    width: '1000px',
     margin: '0 auto',
     paddingTop: 50,
     paddingBottom: 50,
