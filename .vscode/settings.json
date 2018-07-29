@@ -1,26 +1,2 @@
 {
-    "workbench.colorTheme": "Ayu Dark",
-    "workbench.iconTheme": "eq-material-theme-icons-palenight",
-    "workbench.activityBar.visible": true,
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
-    "terminal.integrated.shellArgs.windows": [
-        "-c",
-        "zsh"
-    ],
-    "window.zoomLevel": 0,
-    "workbench.statusBar.visible": true,
-    "material-icon-theme.folders.color": "#42a5f5",
-    "materialTheme.fixIconsRunning": false,
-    "editor.renderWhitespace": "boundary",
-    "editor.rulers": [],
-    "window.menuBarVisibility": "toggle",
-    "editor.minimap.enabled": false,
-    "editor.fontSize": 16,
-    "editor.overviewRulerBorder": false,
-    "terminal.integrated.rendererType": "dom",
-    "javascript.validate.enable": false,
-    "standard.enable": true,
-    "standard.run": "onType",
-    // "editor.cursorBlinking": "solid"
-    // "terminal.integrated.fontFamily": "Anonymous Pro for Powerline",
 }
