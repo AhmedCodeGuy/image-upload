@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import Input from '@material-ui/core/Input'
+import { renderComponent } from 'recompose'
 
 const styles = theme => ({
   container: {
@@ -13,19 +14,22 @@ const styles = theme => ({
   }
 })
 
-function Inputs (props) {
-  const { classes } = props
-  return (
-    <div className={classes.container}>
-      <Input
-        placeholder='Name'
-        className={classes.input}
-        inputProps={{
-          'aria-label': 'Description'
-        }}
-      />
-    </div>
-  )
+class Inputs extends Component {
+  render () {
+    const { classes } = this.props
+    return (
+      <div className={classes.container}>
+        <Input
+          placeholder='Name'
+          className={classes.input}
+          inputProps={{
+            'aria-label': 'Description'
+          }}
+          {...this.props}
+        />
+      </div>
+    )
+  }
 }
 
 Inputs.propTypes = {

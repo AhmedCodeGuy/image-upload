@@ -14,8 +14,7 @@ const styles = {
   },
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
-    display: 'flex'
+    paddingTop: '56.25%' // 16:9
   }
 }
 
@@ -29,6 +28,8 @@ class SimpleMediaCard extends Component {
   onMouseOut = () => this.setState({ raised: false })
 
   render () {
+    console.log('name', this.props.name)
+    console.log('image', this.props.image)
     const { classes } = this.props
     return (
       <div>
@@ -39,18 +40,14 @@ class SimpleMediaCard extends Component {
           className={classes.card}
         >
           <CardMedia
+            image={this.props.image}
             className={classes.media}
-            image='https://raw.githubusercontent.com/AhmedCodeGuy/Full-Stack-Conf/master/images/nodestradamus.png'
             title='Contemplative Reptile'
           />
           <CardContent>
             <Typography gutterBottom variant='headline' component='h2'>
-              nodestradamus
+              {this.props.name}
             </Typography>
-            {/* <Typography component='p'>
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
-            </Typography> */}
           </CardContent>
         </Card>
       </div>
